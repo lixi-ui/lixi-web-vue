@@ -1,10 +1,8 @@
 var path = require("path");
 var webpack = require("webpack");
 
-var WebpackDevServer = require("webpack-dev-server");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 const { VueLoaderPlugin, default: loader } = require('vue-loader');
-
 
 var config = {
   mode:"development",
@@ -12,8 +10,8 @@ var config = {
     './site/index.js'
   ],
   output: {
-    // path: path.resolve(process.cwd() , './dist'),
-    path: path.join(__dirname, "dist"),
+    path: path.resolve(process.cwd() , './dist'),
+    // path: path.join(__dirname, "dist"),
     filename: 'index.js',
     publicPath: '/',
     environment: {
@@ -115,15 +113,11 @@ var config = {
   ]
 }
 
-var server = new WebpackDevServer(webpack(config),{
-  contentBase: path.resolve(process.cwd() , './public'),
 
-});
-
-server.listen("8019",'0.0.0.0',(err)=>{
-  if(!err){
-    console.log('http://localhost:8019')
+webpack(config, function(err) {
+  if(err){
+    console.log(err)
   } else {
-    console.log('err', err);
+    console.log('build ok')
   }
 })

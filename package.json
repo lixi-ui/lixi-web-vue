@@ -10,6 +10,7 @@
     "start": "node-dev script/webpack.web.js",
     "server": "node-dev server/bin/www",
     "jest": "jest",
+    "build": "node-dev script/webpack.build.js",
     "lib": "node-dev script/webpack.lib.js"
   },
   "repository": {
