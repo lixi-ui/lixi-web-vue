@@ -1,25 +1,19 @@
 <template>
   <div>
-    {{ pageName }}
     <Md/>
   </div>
 </template>
 
 <script>
   import Md from './index.md'
-  import MdEs from './index-es.md'
-  import MdZh from './index-zh.md'
 
   export default {
     name : 'ButtonMd',
     components: {
-      Md,
-      MdEs,
-      MdZh
+      Md
     },
     data () {
       return {
-        pageName: 'button - doc',
         lang: 'zh'
       }
     },
