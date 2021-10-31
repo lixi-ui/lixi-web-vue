@@ -1,7 +1,8 @@
 // import Button from '../../../src/components/button/doc/index.vue'
 // import Tree from '../../../src/components/tree/doc/index.vue'
 import Introduce from './introduce/index.vue'
-import Project from './project/index.vue'
+import Web from './web/index.vue'
+import Material from './material/index.vue'
 
 var douRouter = [
   {
@@ -11,10 +12,16 @@ var douRouter = [
     component: Introduce
   },
   {
-    path: '/doc/project',
-    name: 'project',
-    title: 'project 项目',
-    component: Project
+    path: '/doc/web',
+    name: 'web',
+    title: 'web 项目',
+    component: Web
+  },
+  {
+    path: '/doc/material',
+    name: 'material',
+    title: 'material 项目',
+    component: Material
   },
   // {
   //   path: '/doc/button',
