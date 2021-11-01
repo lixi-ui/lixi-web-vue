@@ -4,9 +4,21 @@
       <a className="home-gist-item home-gist-web" href="http://121.5.123.5:8024" target="_blank">
         <div className="home-gist-wrap">
           <div className="home-gist-img home-gist-img-1"></div>
-          <div className="home-gist-title">web</div>
+          <div className="home-gist-title">manage</div>
           <div className="home-gist-describe">
-            了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。
+            lixi后台权限管理系统项目,让开发者注重专注业务,降低技术难度。
+          </div>
+        </div>
+        <div className="home-gist-bottom">
+          查看详情
+        </div>
+      </a>
+      <a className="home-gist-item home-gist-web" href="http://121.5.123.5:8029/nav" target="_blank">
+        <div className="home-gist-wrap">
+          <div className="home-gist-img home-gist-img-2"></div>
+          <div className="home-gist-title">fusion</div>
+          <div className="home-gist-describe">
+            多维大数据融合,安全技术服务系统
           </div>
         </div>
         <div className="home-gist-bottom">

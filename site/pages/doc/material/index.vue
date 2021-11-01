@@ -6,13 +6,37 @@
           <div className="home-gist-img home-gist-img-1"></div>
           <div className="home-gist-title">material</div>
           <div className="home-gist-describe">
-            了解设计指南，帮助产品设计人员搭建逻辑清晰、结构合理且高效易用的产品。
+            基于业务代码,形成公共组件以及通用代码,提高复用率。
           </div>
         </div>
         <div className="home-gist-bottom">
           查看详情
         </div>
       </a>
+      <span className="home-gist-item home-gist-web home-gist-web-disable">
+        <div className="home-gist-wrap">
+          <div className="home-gist-img home-gist-img-3"></div>
+          <div className="home-gist-title">v-echart</div>
+          <div className="home-gist-describe">
+            封装精致图标组件
+          </div>
+        </div>
+        <div className="home-gist-bottom">
+          暂未完成...
+        </div>
+      </span>
+      <span className="home-gist-item home-gist-web home-gist-web-disable">
+        <div className="home-gist-wrap">
+          <div className="home-gist-img home-gist-img-3"></div>
+          <div className="home-gist-title">v-map</div>
+          <div className="home-gist-describe">
+            实用地图组件
+          </div>
+        </div>
+        <div className="home-gist-bottom">
+          暂未完成...
+        </div>
+      </span>
     </div>
   </div>
 </template>
@@ -91,6 +115,10 @@
         border-top: 1px solid #fb663866;
         color: #666;
       }
+    }
+    .home-gist-web-disable{
+      background: #eee;
+      cursor: not-allowed;
     }
   }
 }

@@ -12,8 +12,8 @@
           web 项目
         </div>
         <div className="home-inner-bottom">
-          <span className="home-inner-quick" href="http://121.5.123.5:8020/#/doc/introduce">快速开始</span>
-          <span className="home-inner-github" href="http://121.5.123.5:8018/#/doc/introduce">GITHUB</span>
+          <a className="home-inner-quick" href="http://121.5.123.5:8020/#/doc/introduce">快速开始</a>
+          <a className="home-inner-github" href="https://github.com/lixi-ui/lixi-web-vue">GITHUB</a>
         </div>
       </div>
     </div>
