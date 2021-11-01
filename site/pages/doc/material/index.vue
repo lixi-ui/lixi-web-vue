@@ -15,7 +15,7 @@
       </a>
       <span className="home-gist-item home-gist-web home-gist-web-disable">
         <div className="home-gist-wrap">
-          <div className="home-gist-img home-gist-img-4"></div>
+          <div className="home-gist-img home-gist-img-2"></div>
           <div className="home-gist-title">v-echart</div>
           <div className="home-gist-describe">
             封装精致图标组件
