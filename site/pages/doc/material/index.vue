@@ -1,7 +1,7 @@
 <template>
   <div class="doc-project">
     <div class="home-gist-content">
-      <a className="home-gist-item home-gist-web" href="http://121.5.123.5:8022" target="_blank">
+      <a className="home-gist-item home-gist-web" href="http://lingyuanping.top/material/" target="_blank">
         <div className="home-gist-wrap">
           <div className="home-gist-img home-gist-img-1"></div>
           <div className="home-gist-title">material</div>
