@@ -1,10 +1,11 @@
 import { defineAsyncComponent } from 'vue';
 import Home from "../pages/home/index.vue";
 import Doc from "../pages/doc/index.vue";
-// import Material from '../pages/material/index.vue';
+import Share from '../pages/share/index.vue';
 // import materialConfig from '../../material/index';
 import Login from "../pages/login/index.vue";
 import docRouter from '../pages/doc/doc-router';
+import shareRouter from '../pages/share/share-router';
 import nav from './nav.config';
 
 const getAsyncComponent = func => {
@@ -94,6 +95,13 @@ var routes = [
     redirect: '/doc/introduce',
     component: Doc,
     children: docRouter
+  },
+  {
+    path: "/share",
+    name: 'share',
+    redirect: '/share/introduce',
+    component: Share,
+    children: shareRouter
   },
   {
     path: '/material',

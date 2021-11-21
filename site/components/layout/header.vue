@@ -10,6 +10,9 @@
             <router-link to="/doc" activeClass='active-menu'>doc</router-link>
           </li>
           <li class="lx-menu-li">
+            <router-link to="/share" activeClass='active-menu'>share</router-link>
+          </li>
+          <li class="lx-menu-li">
             <!-- <router-link to="/material" activeClass='active-menu'>material</router-link> -->
           </li>
           <!-- <li class="lx-menu-li">
