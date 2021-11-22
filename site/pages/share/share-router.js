@@ -1,5 +1,5 @@
 import Introduce from './introduce/index.vue'
-import Ts from './ts/index.vue'
+import Typescript from './typescript/index.vue'
 import Jest from './jest/index.vue'
 import Sass from './sass/index.vue'
 import Build from './build/index.vue'
@@ -17,13 +17,13 @@ var shareRouter = [
   {
     path: '/share/web',
     name: 'ts',
-    title: 'ts 介绍',
-    component: Ts
+    title: 'typescript 引入',
+    component: Typescript
   },
   {
     path: '/share/jest',
     name: 'jest',
-    title: 'jest 介绍',
+    title: 'jest 引入',
     component: Jest
   },
   {
