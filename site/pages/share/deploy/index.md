@@ -1,22 +1,66 @@
 ### 介绍
 
-### web ui 的展示
+### deploy 部署项目
 
-### 发布的时候，遇到的问题。
+### git 上设置Webhooks调用钩子 
 
-### 我们在调用钩子的时候是不能这样去调用的。
+![webhook](./webhooks01.png)
+### 使用 git push 提交到远程仓库时,会触发请求 lixi-ui.cn:8020/operation/
 
-### 仅仅是这样的情况。会调用 git 上的钩子。
+### 启动node服务器。
 
-### 钩子会触发一个请求。这个请求是自己定义的。
+```sh
+  ## 启动服务器
+  node run server
+```
 
-### 先启动一个服务器。
+### 文件 server\routes\operation.js 会接受请求并执行脚本
 
-### 服务器启动了之后。 再这里定义好的钩子会被出发。
+```js
+var express = require('express');
+var router = express.Router();
+var exec = require('child_process').exec;
 
-### 服务器调用自己的命令。请求前端的代码。然后更新代码。
+var shStr = 'sh ./script/deploy.sh'; 
 
-### 将代码放在项目上。
+router.get('/', function(req, res, next) { // get 请求
+  exec(shStr ,function(error,stdout,stderr){
+    console.log(error,stdout,stderr)
+  })
+  res.json(req.query);
+});
 
-### 由于使用的是代理。
+router.post('/', function(req, res, next) { // post 请求
+  exec(shStr ,function(error,stdout,stderr){ // 执行的是 sh 脚本。 代码只能在 linux 下执行。
+    console.log(error,stdout,stderr)
+  })
+  res.json(req.body);
+});
+
+module.exports = router;
+
+```
+
+### 服务端执行 sh 脚本。并更新代码到 public 下
+
+```sh
+#!/bin/sh
+
+## 拉取git最新代码。与git代码同步
+git pull
+
+## 打包代码 (由于本人服务器内存过小,在打包时,不能正常执行,所以自动化构建不能形成)
+npm run build
+
+## 删除旧代码
+rm -r ./server/public/*
+
+## 移动最新打包的代码 到公共文件上
+cp -r ./dist/* ./server/public/
+
+# 最终页面内容更新
+
+```
+
+> 只要一提交git代码, git 就会调用钩子, 去请求服务器。 服务器接受到请求之后，拉取最新git代码. 进行打包. 替换最新的代码。最终更新项目。
 

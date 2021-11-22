@@ -23,7 +23,7 @@ var shareRouter = [
   {
     path: '/share/jest',
     name: 'jest',
-    title: 'jest 引入',
+    title: 'jest 测试',
     component: Jest
   },
   {
@@ -35,19 +35,19 @@ var shareRouter = [
   {
     path: '/share/build',
     name: 'build',
-    title: 'build 介绍',
+    title: 'build 打包',
     component: Build
   },
-  // {
-  //   path: '/share/deploy',
-  //   name: 'deploy',
-  //   title: 'deploy 介绍',
-  //   component: Deploy
-  // },
+  {
+    path: '/share/deploy',
+    name: 'deploy',
+    title: 'deploy 部署',
+    component: Deploy
+  },
   {
     path: '/share/publish',
     name: 'publish',
-    title: 'publish 介绍',
+    title: 'publish 发布包',
     component: Publish
   },
   // {

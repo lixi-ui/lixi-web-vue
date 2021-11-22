@@ -19,7 +19,7 @@
     "description": "", // 描述
     "main": "lib/index.js", // 入口文件
     "scripts": {
-      "lib": "node-dev script/webpack.lib.js", // 打包真个组件库
+      "lib": "node-dev script/webpack.lib.js", // 打包整个组件库
       "lib:cjs": "node-dev script/webpack.lib.cjs.js", // 单个组件打包
     },
     "keywords": [], // 关键字
@@ -157,7 +157,7 @@ webpack(config, function (err) {
     "description": "", // 描述
     "main": "lib/index.js", // 入口文件
     "scripts": {
-      "lib": "node-dev script/webpack.lib.js", // 打包真个组件库
+      "lib": "node-dev script/webpack.lib.js", // 打包整个组件库
       "lib:cjs": "node-dev script/webpack.lib.cjs.js", // 单个组件打包
     },
     "keywords": [], // 关键字
