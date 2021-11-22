@@ -38,24 +38,24 @@ var shareRouter = [
     title: 'build 介绍',
     component: Build
   },
-  {
-    path: '/share/deploy',
-    name: 'deploy',
-    title: 'deploy 介绍',
-    component: Deploy
-  },
+  // {
+  //   path: '/share/deploy',
+  //   name: 'deploy',
+  //   title: 'deploy 介绍',
+  //   component: Deploy
+  // },
   {
     path: '/share/publish',
     name: 'publish',
     title: 'publish 介绍',
     component: Publish
   },
-  {
-    path: '/share/loader',
-    name: 'loader',
-    title: 'loader 介绍',
-    component: Loader
-  },
+  // {
+  //   path: '/share/loader',
+  //   name: 'loader',
+  //   title: 'loader 介绍',
+  //   component: Loader
+  // },
 ]
 
 export default shareRouter

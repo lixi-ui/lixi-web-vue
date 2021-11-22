@@ -6,6 +6,7 @@
   .doc-left {
     position: absolute;
     // background: lightgreen;
+    overflow: auto;
     width: 200px;
     height: 100%;
     .logo {
@@ -32,7 +33,7 @@
   .doc-right.div {
     margin-left: 200px;
     height: 100%;
-    padding: 10px;
+    padding: 0px 10px 10px 30px;
     overflow-y: auto;
     // @include scroll();
     template{
