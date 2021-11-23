@@ -2,6 +2,26 @@
 
 ### deploy 部署项目
 
+### 将服务部署到 云服务器上
+
+```sh
+  ### 登录云服务器 输入 ip 与 密码
+  ssh ubuntu@*.*.*.* 
+```
+
+### clone与启动项目
+
+```sh
+  ## git 拉去项目
+  git clone git@github.com:lixi-ui/lixi-web-vue.git
+  ## 进入项目
+  cd lixi-web-vue
+  ## 安装依赖
+  npm install
+  ## 启动服务
+  npm run server
+```
+
 ### git 上设置Webhooks调用钩子 
 
 ![webhook](./webhooks01.png)

@@ -5,6 +5,8 @@ import Sass from './sass/index.vue'
 import Build from './build/index.vue'
 import Deploy from './deploy/index.vue'
 import Publish from './publish/index.vue'
+import Services from './services/index.vue'
+import Nginx from './nginx/index.vue'
 import Loader from './loader/index.vue'
 
 var shareRouter = [
@@ -49,6 +51,18 @@ var shareRouter = [
     name: 'publish',
     title: 'publish 发布包',
     component: Publish
+  },
+  {
+    path: '/share/services',
+    name: 'services',
+    title: 'services 云服务',
+    component: Services
+  },
+  {
+    path: '/share/nginx',
+    name: 'nginx',
+    title: 'nginx 服务',
+    component: Nginx
   },
   // {
   //   path: '/share/loader',
