@@ -8,6 +8,7 @@ import 'ant-design-vue/dist/antd.css';
 import demoBlock from './components/demo-block/index.vue'
 
 import './style/index.scss'
+import 'highlight.js/styles/color-brewer.css'
 
 var app = createApp(App);
 app.component('DemoBlock', demoBlock)
