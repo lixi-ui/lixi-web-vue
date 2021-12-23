@@ -11,7 +11,7 @@ import './style/index.scss'
 import 'highlight.js/styles/color-brewer.css'
 
 var app = createApp(App);
-app.component('DemoBlock', demoBlock)
+app.component('DemoBlock', demoBlock);
 
 app.use(router).use(Antd);
 

@@ -1,13 +1,12 @@
-### 介绍
+## typescript的加载
 
-### typescript的加载
-
-#### 本项目中的ts. npm包 ts-jest. typescript. @babel/preset-typescript
+### 本项目中的 `ts` 相关 npm 包 `ts-jest typescript @babel/preset-typescript`
 ```sh
-  npm install ts-jest typescript
+  ## 安装 typescript 
+  npm install ts-jest typescript --save-dev
 ```
 
-#### webpack 中的配置
+### webpack 中的配置
 ```js
   // @babel/preset-typescript 将 ts 的代码转化为 js 代码。但是不会校验参数的类型。
   var config = {
@@ -33,7 +32,7 @@
   }
 ```
 
-### 配置 tsconfig.json 更多详情请看 typescript 官网
+### 配置 tsconfig.json 更多详情请看 typescript 官网(https://www.tslang.cn/)
 ```json
 {
   "compilerOptions": {

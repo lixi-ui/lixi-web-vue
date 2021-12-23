@@ -2,10 +2,12 @@ import { defineAsyncComponent } from 'vue';
 import Home from "../pages/home/index.vue";
 import Doc from "../pages/doc/index.vue";
 import Share from '../pages/share/index.vue';
+import Adonis from '../pages/adonis/index.vue';
 // import materialConfig from '../../material/index';
 import Login from "../pages/login/index.vue";
 import docRouter from '../pages/doc/doc-router';
 import shareRouter from '../pages/share/share-router';
+import adonisRouter from '../pages/adonis/adonis-router';
 import nav from './nav.config';
 
 const getAsyncComponent = func => {
@@ -102,6 +104,13 @@ var routes = [
     redirect: '/share/introduce',
     component: Share,
     children: shareRouter
+  },
+  {
+    path: "/adonis",
+    name: 'adonis',
+    redirect: '/adonis/home',
+    component: Adonis,
+    children: adonisRouter
   },
   {
     path: '/material',
